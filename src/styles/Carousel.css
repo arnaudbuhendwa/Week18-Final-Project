@@ -1,0 +1,35 @@
+/* Carousel.css */
+
+.fitness-carousel {
+  max-height: auto; /* Fixed height for the carousel */
+  margin-top: auto;
+  overflow: hidden; /* Hide overflow to prevent image shifting */
+}
+
+.fitness-carousel .carousel-inner {
+  max-height: auto; /* Set max height of the carousel inner */
+}
+
+.fitness-carousel .carousel-item {
+  position: relative;
+  text-align: center;
+  background-color: #f0f0f0; /* Fallback color */
+  max-height: 100%; /* Set max height of each carousel item */
+}
+
+.fitness-carousel img {
+  width: 100%; /* Set width to 100% to make images fit the container */
+  max-height: 100%; /* Set max height to ensure consistent aspect ratio */
+  object-fit: contain; /* Maintain aspect ratio within the container */
+}
+
+/* Adjust image size as needed */
+@media (max-width: 768px) {
+  .fitness-carousel img {
+    max-height: 200px; /* Reduce max height for smaller screens */
+  }
+}
+
+.fitness-carousel .carousel-indicators {
+  display: none; /* Hide the default indicators */
+}

@@ -1,0 +1,21 @@
+/* Styling for the container that holds the home page content */
+.home-container {
+  position: relative;
+  min-height: 100vh; /* Ensures that the container takes at least the full viewport height */
+  overflow: hidden; /* Hides any content that overflows the container */
+}
+
+/* Styling for the overlay used in the jumbotron section */
+.jumbotron-overlay {
+  position: absolute; /* Position the overlay absolutely within its container */
+  top: 50%; /* Position the top of the overlay at the vertical center of the container */
+  left: 50%; /* Position the left side of the overlay at the horizontal center of the container */
+  transform: translate(-50%, -50%); /* Center the overlay perfectly using negative translate */
+  text-align: center; /* Center-align the text content within the overlay */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background color */
+  padding: 20px; /* Padding around the content within the overlay */
+  border-radius: 10px; /* Rounded corners for the overlay */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Shadow to give depth to the overlay */
+  z-index: 1; /* Controls the stacking order; overlay appears above other elements */
+}
+
